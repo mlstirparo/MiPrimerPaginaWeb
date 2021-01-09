@@ -1,0 +1,167 @@
+    <!--Escribo comentarios de esta manera usando un signo menor, signo ! y dos guiones -- -->
+
+
+<!DOCTYPE html>
+<!--TODO ESTO ES CONFIGURACIÓN Y DESCRIPCIÓN-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Indica que tipo de codificación de caracteres vamos a utilizar-->
+   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Esto significa que el contenido 
+    se va a adaptar al tamaño de pantalla del dispositivo-->
+
+    
+    <title>mI primer maquetación web</title> <!--Este es el nombre que aparecerá en la pestaña ES LA
+    ÚNICA ETIQUETA VISIBLE-->
+    <meta name= "Description" content= "Esta es mi primer página web" /> 
+    <meta name= "Author" content= "María Laura Stirparo y Nicolás José Stirparo" /> 
+    <meta name= "keywords" content= "Mi primer sitio, mi primer página web, probando, maquetación"/>
+    <!--La etiqueta meta no tiene un par, vamos a usarla para usar sus atributos y darle más información al 
+    navegador. Aunque no se vea or pantalla esto hará que nuestra página seas más fácil de encontrat-->
+        
+</head>
+
+<!--TODO ESTO ES LO QUE VA A APARECER EN MI PÁGINA-->
+
+
+<body><!--Acá va a ir nuestra página como tal. Se aconseja poner la etiqueta semántica main-->    
+
+    <h1>ESTA ES MI PRIMER PÁGINA WEB</h1>
+
+   <div> <!--El div es un elemento contenedor. -->
+        <main>
+        <!--La etiqueta main ind ica qué es lo primero que va a abrir el navegador. Puedo poner acá lo que 
+        primero se cargue cuando la persona abre la página -->
+           
+            <header> <!--header es el encabezado-->
+                <nav> <!--El nav crea enlaces-->
+                    <ul> <!--ul significa unordered list, es decir lista desordenada-->
+
+                        <li> <a href="#">Inicio</a></li> <!--li es una etiqueta para listar un elemento, 
+                            son elementos en bloque. Pongo una etiqueta <a href="#"></a> para que eso me
+                        genere una ruta estática que me lleve a algún lado-->
+                        <li><a href="#">Nosotros</a></li> <!--con CSS se cambia la orientación del texto-->
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+
+                    </ul>
+                </nav> 
+
+            </header>
+            <section> <!--Creamos una sección, puede haber muchas secciones en una página-->
+                <hi>Mi primer html</hi> <!--hi se usa para poner texto, según el tamaño que le quiera dar 
+                será el número que lleve-->
+            </section>
+            <section>
+                <article>
+
+                    <hgroup>
+                    <h1>Título del primer artículo</h1>
+                    <h2>Subtítulo del primer artículo</h2>
+                </hgroup> <!-- la etiqueta <hgroup> sirve para darle a estos títulos el carácter de encabezados 
+                    aclarando que no estén del mismo tamaño que el título que es el principal-->
+                   
+                    <time datetime= "6-1-2021">Publicado el 6 de enero del 2021</time>
+<!--Usando la etiqueta time puedo poner una fecha. Agregándole el atributo datetime le pongo una fecha que 
+lo que hará es darle más información al navegador-->
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem debitis amet eligendi 
+                    tempora <samll>aut delectus repellendus perferendis!</samll> Perferendis ipsa aut 
+                    temporibus dolor accusamus tempora alias eius saepe cum? Amet mollitia itaque animi 
+                    quos doloribus nihil iure expedita <cite>aliquid molestiae corporis quidem</cite>, 
+                    nobis magnam saepe, illo et dolorum magni blanditiis eveniet ipsum facere optio illum
+                     ex <span>dicta cupiditate. Laboriosam, sit sint.</span>
+                </p> <!--Poniendo un texto entre las etiquetas <small> </small> hago que el texto se vea más pequeño 
+                Poniendo entre las etiquetas <cite> </cite> el texto aparecerá en cursiva como una cita. La etiqueta 
+                <span> </span> no cambia el texto sino que le da la posibilidad de en un futuro ser editado con CSS-->
+                 
+                <footer> <!--Este es el pie de página del primer artículo-->
+                   
+                    <p>Comentarios (0)</p> <!--Usando la etiqueta <p> escribo la palabra Comentarios
+                        y entre paréntesis le indico que hay 0 en este momento-->
+
+                </footer> 
+            
+            </article>
+            </section>
+
+<!--Puedo ir agregando todos los artículos que quiera-->
+
+
+
+
+            <section>
+                <article>
+
+                    <hgroup>
+                         <h1>Título del segundo artículo</h1>
+                         <h2>Subtítulo del segundo artículo</h2>
+                    </hgroup>
+
+                    <time datetime= "6-1-2021">Publicado el 6 de enero del 2021</time>
+
+                    <img src="https://www.digitalhouse.com/logo-DH.png" alt="Logo Digital House"> <!--Para 
+agregar una imagen debo escribir img sin el signo menor adelante y tocar enter (VSC completará la estructura
+ que falta) Si quiero una imagen de la web debo hacer click derecho, /copiar dirección de la imagen/ para 
+ obtener la ruta completa. El atributo SRC significa source-->
+
+                    <img src="images/logo.jpg" alt="El logo de nuestra pagina"> <!--Para usar una imagen 
+de la carpeta images de nuestro proyecto vamos a darle la ruta escribiendo entre las comillas images/y 
+el nombre de la imagen. formato. Es importante saber que no es indiferente si escribimos con mayúsculas
+o minúsculas / Entre las segundas comillas se le da un nombre o información de la imagen-->
+                    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit maxime 
+                    consequatur beatae vitae, reprehenderit est rerum recusandae eius commodi alias et, 
+                    itaque maiores labore cum soluta porro fugiat earum?
+                </p> <!-- la <p> sirve para poner un párrafo. Si yo estoy montando la página y necesito
+texto de relleno, entonces puedo poner Lorem y automáticamente me dará un texto de relleno. Puedo también
+pedirle un número de palabras determinado Lorem20 Lorem30 y nos dará un texto de la cantidad de palabras 
+que pedimos-->
+                    <footer> <!--Este es el pie de página del segundo artículo-->
+                        <p>Comentarios (10)</p> <!--Usando la etiqueta <p> escribo la palabra Comentarios
+                            y entre paréntesis le indico que hay 10 en este momento-->
+                    </footer>
+                    <a href="http://google.com"> Visita el sitio web de Google</a> <!--Voy a crear 
+un link a otra página, en este caso Google. Luego de escribir la web voy a poner el texto que quiero que
+lea el usuario, en este caso "Visita el sitio web de Google"-->
+                </article>
+
+            </section>
+
+
+            <aside>
+                Archivo
+                Acerca de
+                <blockquote cite= "http://pinterest.com"> <!--Esta etiqueta se utiliza para poner citas. Si 
+quiero, dentro de blackquote puedo escribir el atributo cite= y escribir el sitio o lugar del que saqué la 
+frase-->
+                    Mensaje 1
+                     </blockquote>
+                <blockquote>
+                    Mensaje 2
+                </blockquote>
+        
+            </aside> <!--Esta etiqueta sirve para agregar contenido relacionado pero que no es
+tan importante. Siempre va al lado de section y es para contenido lateral aunque no aparecerá de
+costado hasta que no le demos el diseño con CSS-->
+
+            <footer> <!--Es el pie de página de mi página web. Dentro puedo poner artículos también o nav. 
+            El footer no es solamente el pie de página de mi sitio sino el pie de cualquier elemento-->
+                <nav> <!--Un nav representa una sección de página que proporciona enlaces de navegación
+ya sea dentro del documento actual o hacia otros documentos. Se utiliza para navegar en menúes, tablas 
+de contenidos e índices. EL HEADER Y EL FOOTER NO VAN POR DUERA DEL BODY -->
+                </nav>
+            Derechos reservados María Laura Stirparo & Nicolás José Stirparo
+
+            </footer>
+
+        </main>
+
+    </div>
+</body> <!--LO QUE ESTÉ POR FUERA DEL BODY NO SE VA A VER EN LA PÁGINA-->
+</html>
+
+
+
